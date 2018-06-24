@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nguyet.moneymanager3.Add_Ex_Income.AddIncomeActivity"
+    android:weightSum="1"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="30px"
+            android:src="@drawable/iconchi" />
+
+        <EditText
+            android:id="@+id/edittext_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:hint="0 đ"
+            android:paddingLeft="90px"
+            android:textColorHint="#FF0000"
+            android:textSize="30dp"
+            android:inputType="number" />/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#b0003a" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="30px"
+            android:src="@drawable/note" />
+
+        <EditText
+            android:id="@+id/edittext_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:hint="Ghi chú"
+            android:paddingLeft="90px"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#b0003a" />
+
+    <LinearLayout
+        android:layout_width="425dp"
+        android:layout_height="83dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="30px"
+            android:src="@drawable/calendar" />
+
+        <EditText
+            android:id="@+id/edittext_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:focusable="false"
+            android:hint="Pick date"
+            android:paddingLeft="90px"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#b0003a" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:text="Chọn danh mục:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30px" />
+
+    <Spinner
+        android:id="@+id/spinner_danhmucthu"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_weight="0.12" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="165dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50px"
+            android:background="@drawable/custom_button_reset"
+            android:text="Huỷ"
+            android:textColor="@color/colorPrimary"
+            android:textSize="35px" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="165dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50px"
+            android:background="@drawable/custom_button_submit"
+            android:text="Thêm"
+            android:textColor="#FFFFFF"
+            android:textSize="35px" />
+    </LinearLayout>
+
+</LinearLayout>
